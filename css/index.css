@@ -8,57 +8,62 @@
 
 /* Navbar */
 a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 body {
-    margin: 0;
-    background-color: #dbdbdb;
-  }
-  
-  nav {
-    background-color: #ebeaea;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
-  nav ul li,img {
-    margin-right: 25px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav ul li .active {
-    color: orangered;
-  }
-  
-  .nav-left {
-    flex: 50%;
-  }
-  
-  .nav-right {
-    flex: 50%;
-    text-align: end;
-    margin-right: 25px;
-  }
-  
-  .nav-right a {
-    background-color: orangered;
-    padding: 8px 20px;
-    color: white;
-    border-radius: 5px;
-  }
+  margin: 0;
+}
+
+nav {
+  background-color: #00214d;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li,img {
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul img {
+  width: 70px;
+  height: 10vh;
+}
+
+nav ul li .active {
+  color: #078080;
+  text-decoration: underline;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: #078080;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+}
 
 
 /* Card */
@@ -85,11 +90,12 @@ body {
     text-align: center;
     margin-bottom: 10px;
     cursor: pointer;
+    border: none;
 }
 
 .container-card button:hover {
-    background-color: orangered;
-    box-shadow: 0 0 10px black;
+    background-color: #078080;
+    box-shadow: 0 0 5px grey;
 }
 
 .container-card .left a {
@@ -97,6 +103,10 @@ body {
     font-weight: bold;
     color: black;
     margin-right: 20px;
+}
+
+.container-card .left a:hover {
+  color: #078080;
 }
 
 .container-card .sosmed {

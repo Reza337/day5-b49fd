@@ -10,7 +10,7 @@
 a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   }
   
   nav {
-    background-color: #ebeaea;
+    background-color: #00214d;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -37,9 +37,15 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  nav ul img {
+    width: 70px;
+    height: 10vh;
+  }
   
   nav ul li .active {
-    color: orangered;
+    color: #078080;
+    text-decoration: underline;
   }
   
   .nav-left {
@@ -53,7 +59,7 @@ body {
   }
   
   .nav-right a {
-    background-color: orangered;
+    background-color: #078080;
     padding: 8px 20px;
     color: white;
     border-radius: 5px;
@@ -65,7 +71,7 @@ body {
 }
 
 .blog-form {
-  background-color: #dbdbdb;
+  background-color: #fffffe;
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -92,7 +98,6 @@ body {
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
-  background-color: #dbdbdb;
   border: none;
   border-radius: 8px;
 }
@@ -237,22 +242,31 @@ body {
 .blog-form form button {
   padding: 8px 25px;
   font-size: 17px;
-  background: #ec4d37;
+  background: #078080;
   border-radius: 20px;
   border: none;
   color: #fff;
   cursor: pointer;
 }
 
+.blog-form form button:active {
+  background-color: black;
+}
+
 .blog-content {
-  width: 90%;
+  padding-top: 50px;
+  width: 100%;
+  background-color: #f45d48;
 }
 
 .blog-content h1 {
   text-align: center;
+  font-size: 50px;
+  color: #f8f5f2;
 }
 
 .blog-content .container-card {
+  background-color: #f8f5f2;
   width: 300px;
   height: 550px;
   margin: 30px;
@@ -277,10 +291,12 @@ body {
 .blog-content .container-card .card-content h1 {
   text-align: left;
   font-size: 15px;
+  color: black;
 }
 
 #container-desc {
   width: 100%; /* Sesuaikan dengan lebar kontainer Anda */
+  height: 100px;
   display: -webkit-box; /* Mendukung Safari dan Chrome */
   -webkit-line-clamp: 4; /* Batasan jumlah baris yang akan ditampilkan */
   -webkit-box-orient: vertical; /* Mengatur orientasi kotak */
@@ -307,7 +323,7 @@ body {
 }
 
 .blog-content .container-card .card-content div i:hover {
-  color: orangered;
+  color: #078080;
 }
 
 .blog-content .container-card .card-content .ctn-btn {
@@ -327,7 +343,7 @@ body {
 
 .blog-content .container-card .card-content .ctn-btn button {
   font-size: 15px;
-  background-color: orangered;
+  background-color: #078080;
   width: 130px;
   color: white;
   border-radius: 5px;
